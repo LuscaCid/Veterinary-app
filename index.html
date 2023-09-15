@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700;800&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinary System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./js/main.js" type="module" defer></script>
+</head>
+<body>
+    <div class="alert-error">
+        <span>Acesso negado</span>
+    </div>
+    <div class="page">
+        <div class="cartao-1 ">
+            <div class="card ">
+                
+                <div class="text-first">
+                    <div class="imagem-e-texto">
+                        <h1>
+                            Sistema <span>Medicina</span> Veterinária 
+                        </h1>
+                        <img id="husky" src="./assets/husky-svgrepo-com.svg" alt="husky">
+                    </div>
+                        
+                        <p>Um programa feito em <span>homenagem</span> a minha amada Clara Lua</p>
+                    <p>
+                        você vai usá-lo em sua <span>futura clínica</span> veterinária, meu bem
+                    </p>
+                    </div>
+                
+                    <form id="form-login">
+                        <legend>Faça <span>login</span></legend>
+                        <fieldset>
+                            <div class="input-wrapper">
+                                <label for="username" >Usuário:</label>
+                                <input type="text" placeholder="Nome de usuário"  id="username" required >
+                            </div>
+                                
+                            <div class="input-wrapper">
+                                <label for="password" >Senha:</label>
+                                <input type="password" placeholder="Senha"  id="password" required >
+                            </div>
+                            <div class="input-wrapper"> 
+                                <button id="join">Entrar</button>
+                            </div>
+                        </fieldset>
+                        
+                    </form>
+                
+                    
+            </div>
+
+        </div>
+            
+        <div class="cartao-2 hide">
+            <div class="card logged ">
+                <div class="text">
+                    
+                    <h1>Olá, <span id="name-user">Clara</span>. O que iremos fazer hoje?</h1>
+                    <div class="form-cod">
+                        <form id="form-codigo-id">
+                            
+                            <div class="input-wrapper-logged">
+                                <input type="text" id="search-cod-id" placeholder="Pesquisar animal (codigo ID)">
+                                <button class="search"><img src="./assets/loopa-nova.svg" alt="loopa-pesquisar"></button>
+                            </div>
+                        </form>
+                        <form id="form-nome">
+                            <div class="input-wrapper-logged">
+                                <input type="text" id="search-name" placeholder="Pesquisar animal (Nome)">
+                                <button class="search"><img src="./assets/loopa-nova.svg" alt="loopa-pesquisar"></button>
+                            </div> 
+                        </form>
+                        <form id="form-nome-dono">
+                            <div class="input-wrapper-logged">
+                                <input type="text" id="search-name-owner" placeholder="Pesquisar por dono (Nome)">
+                                <button class="search"><img src="./assets/loopa-nova.svg" alt="loopa-pesquisar"></button>
+                            </div> 
+                        </form>
+                    </div>                
+                                                                                 
+                </div>
+                <div class="botao-to-menu open">
+                    <div class="botao-opcoes">
+                        <span>menu</span>
+                        <button class="menu-opcoes"><img id="img-menu" src="./assets/caret-left-svgrepo-com (1).svg" alt="menu">
+                        </button>
+                    </div>    
+                        
+                    <div class="buttons-links closed">             
+                        <button>Cadastro de animal</button>
+                        <button>Cadastro de dono</button>
+                        <button>Relatorio</button>
+                        <button>consultar estoque</button>   
+                        <button id="logout">fazer logout</button>          
+                    </div>
+                </div>
+
+                <img id="doguinho" src="./assets/dog-svgrepo-com.svg" alt="">    
+                <img id="bolinhas-cheias" src="./assets/dots-9-svgrepo-com.svg" alt="">
+                <img id="bolinhas-triangulo" src="./assets/bolinhas-triangulo.svg" alt="bolinhas e triangulo">
+            </div>
+        </div>
+            
+    </div>
+</body>
+</html>

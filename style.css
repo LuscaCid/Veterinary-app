@@ -1,0 +1,423 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+    --second-color: rgb(99, 102, 151); 
+}
+body{
+    background: rgb(190, 190, 190);
+}
+.page{
+    
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    
+    place-content: center;
+
+}
+.card{
+    position: relative;
+    background: rgb(252,255,215);
+background: linear-gradient(120deg, rgba(252,255,215,1) 15%, rgba(155,207,233,1) 76%);
+    box-shadow: 0 .2rem 4rem rgb(255,255,255, 0.3);
+    border-radius: .8rem;
+    margin: auto;
+    width: min(35.5rem, 90%);
+    height: 68rem;
+    padding: 3.4rem 1.7rem;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.text-first{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    width: 100%;
+}
+.text-first h1 span{
+    color: white;
+    background: var(--second-color) ; 
+}
+
+.text-first h1{
+    
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid var(--second-color);
+    font-weight: 700;
+    color: rgb(22, 22, 22);
+    font-size: 3rem;
+    font-family: 'Archivo',sans-serif;
+    margin-bottom: 2.6rem;
+}
+.text-first p span{
+    color:var(--second-color);
+    transition: background 0.3s;
+}
+.text-first p span:hover{
+    background: var(--second-color);
+    color: white;
+}
+.text-first p {
+    font-weight: 400;
+    font-size: 1.7rem;
+    font-family: 'Poppins',sans-serif;
+}
+fieldset{
+    border: none;
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: column;
+
+}
+.hide {
+    display: none;
+}
+.input-wrapper{
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+legend{
+    width: fit-content;
+    border-bottom: 1px solid black;
+    font-size: 2.6rem;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+    margin-bottom: 2.2rem;
+    margin-top: 5rem;
+}
+.input-wrapper label{
+    width: fit-content;
+    margin-bottom: 0.7rem;
+    font-size: 1.8rem;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 400;
+}
+.input-wrapper input{
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    border-radius: .8rem;
+    border: none;
+    background: rgb(235, 235, 235);
+    padding: 1rem 0.7rem;
+}
+.input-wrapper input:focus{
+    outline: 3px solid var(--second-color);
+}
+.input-wrapper #join{
+    font-weight: 700;
+    font-size: 1.8rem;
+    font-family: 'Archivo',sans-serif;
+    border: none;
+    border-radius: .8rem;
+    padding: 1rem 0.7rem;
+    transition: background 0.4s;
+}
+.input-wrapper #join:hover{
+    background: var(--second-color) ;
+    box-shadow: 0 0.2em 0.4rem rgb(255,255,255, 0.2);
+    color: white;
+}
+
+.input-wrapper #password{
+    margin-bottom: 1.2rem;
+}
+.card.logged{
+    gap: 1.6rem;
+    width: min(35rem,90%);
+    font-size: 2rem;
+    font-family: 'roboto',sans-serif;
+    color: rgb(31, 31, 31);
+    
+        
+}
+.buttons{
+    
+    margin-top: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1.2rem;
+}
+.buttons-links button{
+    border-radius: 0.4rem;
+    width: 20rem;
+    padding: 0.8rem .6rem;
+    border: none;
+    color: white;
+    background: var(--second-color);
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-family: 'Epilogue',sans-serif;
+    font-weight: 700;
+    transition: background 0.3s;
+    transition: transform 0.3s;
+}
+.botao-opcoes .menu-opcoes img .rotate{
+    transform: rotate(270deg);
+}
+.buttons-links button:hover{
+    color: black;
+    transform: scale(1.07);
+    background:white ;
+}
+.buttons-links{
+    align-items: end;
+    width: 100%;
+    gap: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction:column;
+    margin-right: 1rem;
+}
+.buttons-links.closed{
+    visibility: hidden;
+    opacity: 0;
+    
+}
+
+#text img{
+    filter: invert(1);
+    position: absolute;
+    width: 3.0rem;
+    right: 1.7rem;
+    top: 1.7rem;
+}
+.card.logged form{
+    margin-top: 1.2rem;
+}
+#doguinho{
+    position: absolute;
+    width: 10.0rem;
+    height: 10rem;
+    right: 12rem;
+    bottom: 0rem;
+}
+
+.card.logged .input-wrapper-logged{
+    margin-top: 1rem;
+}
+.input-wrapper-logged input{
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    border: none;
+    border-radius: 999px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 1.5rem;
+}
+.input-wrapper-logged input:focus{
+    outline: 2px solid rgb(166, 211, 236);
+}
+.input-wrapper-logged #join:hover{
+    background: var(--second-color) ;
+    box-shadow: 0 0.2em 0.4rem rgb(255,255,255, 0.2);
+    color: white;
+}
+.input-wrapper-logged{
+    position: relative;
+    
+}
+
+.search {
+    padding: 0 0.2rem;
+    border-radius: 999rem;
+    position: absolute;
+    right: 1rem;
+    top: 0.7rem;
+    border: none;
+    background: rgb(189, 224, 233);
+    cursor: pointer;
+}
+.search:hover{
+    box-shadow: 0 0.2 0.2 rgb(0,0,0 0.7);
+}
+#bolinhas-triangulo{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 1.2rem;
+    right: 1.2rem;
+}
+.texto-e-imagem{
+    position: relative;
+}
+#husky{
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    top: 1.7rem;
+    right: 1.2rem;
+}
+#bolinhas-cheias{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 1.2rem;
+    left: 1.2rem;
+    filter: invert(1);
+}
+.menu-opcoes img{
+    width:20px;
+    height: 20px;
+    transform: rotate(180deg);
+
+
+}
+.menu-opcoes{
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    background:none;
+    cursor: pointer;
+    filter: invert(1);
+
+}
+.botao-opcoes{
+    
+    border-radius: 1.5rem;
+    padding:  0.2rem 1.5rem;
+    width: fit-content;
+    background: rgb(92, 84, 136);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-shadow: 0.4rem 0.4rem 0.2rem rgb(0,0,0, 0.5);
+    
+}
+
+.botao-to-menu{
+    margin: auto;
+    margin-top: 1.2rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    transform: translateX(-400px);
+    transition: transform 1.8s;
+    
+}
+.botao-to-menu.open, .buttons-links.open{
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+}
+.alert-error.alertado.desalertado{
+    transform:translateY(-30px)
+}
+.alert-error.alertado{
+    transform: translateY(0);
+}
+.alert-error{
+    transition: transform 0.4s;
+    transform: translateY(-30px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: rgb(255, 100, 100);
+}
+.alert-error span{
+    font-size: 2rem;
+    font-family: 'Roboto',sans-serif;
+    color: white;
+}
+
+@media (min-width: 45rem){
+    .card{
+        
+        padding: 0 0 0 3rem ;
+        
+        height: max-content;
+        
+        align-items: center;
+        gap: 12rem;
+        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    .cartao-1{
+        margin: 5rem 5rem;
+        margin-top: -12rem;
+        
+    }
+    .card .text-first{
+        height: 70%;
+        
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        justify-content:flex-start;
+    }
+    .card .text-first h1{
+        width: 100%;
+        border: none;
+        font-size: 5.2rem;
+        border: 1px solid var(--second-color);
+        border-radius: 2rem;
+        padding: 1rem;
+    }
+    .card .text-first p{
+        font-size: 2.3rem;
+    }
+   
+    #form-login{
+        border-radius: 0  .8rem .8rem 0;
+        background: white;
+        padding: 10rem 4rem;
+        max-height: 100%;
+        height: 100%;
+        width:40%;
+       
+    }
+    #form-login legend{
+        color: rgb(8, 0, 36);
+        border: none;
+        
+        font-size: 4.2rem;
+    }
+    #form-login legend span{
+        background: var(--second-color);
+        color: white;
+    }
+
+    .input-wrapper label{
+        font-size: 2rem ;
+    }
+    /*estilizando agora a segunda tela, a de menu*/
+    .cartao-2 .card.logged{
+        width:fit-content;
+        padding: 6rem 3rem;
+    }
+    .cartao-2 .text{
+        width: 50%;
+        display: block;
+        margin: 2.5rem 4.2rem;
+    }
+    .buttons-links button{
+        margin: 0;
+       
+    }
+
+    .card.logged .text h1{
+        margin-bottom: 5.2rem;
+        
+    }
+    .cartao-2{
+        margin-top: -18rem;
+    }
+    
+}
